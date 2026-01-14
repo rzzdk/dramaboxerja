@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system utama aplikasi DramaBox.
+   Semua warna menggunakan HSL dan diekspos sebagai token semantic. */
+
+@layer base {
+  :root {
+    --background: 230 35% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 231 32% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 231 32% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 260 85% 60%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 230 30% 18%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 228 22% 20%;
+    --muted-foreground: 220 15% 75%;
+
+    --accent: 200 80% 55%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 228 24% 20%;
+    --input: 228 24% 20%;
+    --ring: 260 85% 60%;
+
+    --radius: 0.9rem;
+
+    --sidebar-background: 230 35% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 260 85% 60%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 228 22% 20%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 228 24% 20%;
+    --sidebar-ring: 260 85% 60%;
+  }
+
+  .dark {
+    --background: 230 35% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 231 32% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 231 32% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 260 85% 60%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 230 30% 18%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 228 22% 20%;
+    --muted-foreground: 220 15% 75%;
+
+    --accent: 200 80% 55%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62.8% 45%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 228 24% 20%;
+    --input: 228 24% 20%;
+    --ring: 260 85% 60%;
+
+    --sidebar-background: 230 35% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 260 85% 60%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 228 22% 20%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 228 24% 20%;
+    --sidebar-ring: 260 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
